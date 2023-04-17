@@ -5,7 +5,11 @@ export default function ToDoList({ data }) {
     <ul className="todo-block">
       {data.map((item) => (
         <li key={item.id}>
-          <ToDoItem title={item.title} description={item.description} />
+          <ToDoItem
+            id={item.id}
+            title={item.title}
+            description={item.description}
+          />
         </li>
       ))}
     </ul>

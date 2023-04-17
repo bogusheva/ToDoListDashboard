@@ -8,8 +8,17 @@ export default function ToDoItem(props) {
   function openDeleteWindow() {
     setIsOpenDelete(true);
   }
+
+  function closeDeleteWindow() {
+    setIsOpenDelete(false);
+  }
+
   function openEditWindow() {
     setIsOpenEdit(true);
+  }
+
+  function closeEditWindow() {
+    setIsOpenEdit(false);
   }
 
   return (
@@ -18,8 +27,20 @@ export default function ToDoItem(props) {
         <h2>{props.title}</h2>
         <p>{props.description}</p>
       </div>
-      <ButtonEdit onClick={openEditWindow} isOpen={isOpenEdit} />
-      <ButtonDelete onClick={openDeleteWindow} isOpen={isOpenDelete} />
+      <ButtonEdit
+        id={props.id}
+        isOpen={isOpenEdit}
+        onClick={openEditWindow}
+        onClose={closeEditWindow}
+        title={props.title}
+        description={props.description}
+      />
+      <ButtonDelete
+        id={props.id}
+        isOpen={isOpenDelete}
+        onClick={openDeleteWindow}
+        onClose={closeDeleteWindow}
+      />
     </div>
   );
 }

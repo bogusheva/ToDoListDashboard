@@ -4,8 +4,10 @@ import AddBlock from "./components/addBlock";
 import EmptyList from "./components/emptyList";
 import ToDoList from "./components/toDoList";
 
+import { urlServer } from "./api/api";
+
 export default function App() {
-  const { isLoading, error, data } = useFetch("http://localhost:3000/toDoList");
+  const { isLoading, error, data } = useFetch(urlServer);
 
   if (error) {
     console.log(error);
