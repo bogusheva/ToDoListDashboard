@@ -1,0 +1,28 @@
+.delete-window {
+  width: 281px;
+  height: 143px;
+  position: absolute;
+  top: 10%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  margin: 0 auto;
+  padding: 37px 0 13px 0;
+  background-color: $color-black-dark;
+  border-radius: 4px 4px 0 0;
+  border: 0.5px solid $color-accent-dark;
+  border-top: 5px solid $color-accent-dark;
+
+  p {
+    color: $color-light;
+    font-size: 18px;
+    line-height: 1;
+  }
+  .buttons-block {
+    display: flex;
+    gap: 10px;
+  }
+}

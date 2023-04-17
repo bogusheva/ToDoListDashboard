@@ -1,0 +1,24 @@
+//Breakpoints for forming queries for different modes: mobile, tablet, desktop
+$width-desktop: 1024px;
+$width-tablet: 768px;
+$width-mobile: 414px;
+
+//width of useful content
+$maxWidth-content: 1420px;
+
+//colors
+$color-black-dark: #1e1e24;
+$color-black-light: #242320;
+$color-light: #f0e3ca;
+$color-accent-dark: #a35709;
+$color-accent-light: #ff8303;
+
+//font-family
+$font-family: "Roboto", sans-serif;
+
+//font-size
+$fontSize-base: 10px;
+
+//font-weight
+$weight-base: 400;
+$weight-bold: 500;

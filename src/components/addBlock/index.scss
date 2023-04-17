@@ -1,0 +1,31 @@
+.add-block {
+  display: flex;
+  width: 100%;
+  gap: 8px;
+
+  div {
+    height: 70px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    flex: 1;
+
+    input {
+      width: 100%;
+      background-color: $color-black-light;
+      border: 1px solid $color-accent-dark;
+      border-radius: 4px;
+      font-family: $font-family;
+      font-size: 14px;
+      line-height: 1.2;
+      padding: 7px 4px;
+      text-indent: 10px;
+      color: $color-light;
+
+      &:focus {
+        background-color: $color-black-dark;
+        border: 1px solid $color-accent-light;
+      }
+    }
+  }
+}

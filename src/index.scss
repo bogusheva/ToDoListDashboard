@@ -1,0 +1,12 @@
+@import "./scss/reset.scss";
+@import "./scss/variables.scss";
+@import "./scss/mixins.scss";
+@import "./scss/general.scss";
+//components
+@import "./components/button/index.scss";
+@import "./components/deleteWindow/index.scss";
+@import "./components/editWindow/index.scss";
+@import "./components/addBlock/index.scss";
+@import "./components/emptyList/index.scss";
+@import "./components/toDoList/index.scss";
+@import "./components/toDoItem/index.scss";

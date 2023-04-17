@@ -1,0 +1,25 @@
+.body-container {
+  background-color: $color-black-dark;
+  min-height: 100vh;
+  font-family: $font-family;
+  font-weight: $weight-base;
+  padding: 15px 0;
+  letter-spacing: 0em;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+  color: $color-light;
+}
+
+.main-page {
+  width: 100%;
+  min-height: 100vh;
+  padding: 23px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 33px;
+}

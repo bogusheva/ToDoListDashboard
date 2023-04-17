@@ -1,0 +1,39 @@
+.btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: $color-black-light;
+  transition: all 0.3s ease-in-out;
+  padding: 0;
+  cursor: pointer;
+
+  &:hover {
+    border: 1px solid $color-accent-light;
+    background: $color-black-dark;
+  }
+}
+
+.btn-confirm {
+  width: 64px;
+  height: 24px;
+  color: $color-light;
+  font-size: $fontSize-base;
+  line-height: 1.8;
+  border-radius: 4px;
+  border: 1px solid $color-accent-dark;
+}
+
+.btn-add {
+  width: 70px;
+  height: 70px;
+  border: 2px solid $color-accent-dark;
+  border-radius: 8px;
+}
+
+.btn-delete,
+.btn-edit {
+  width: 36px;
+  height: 36px;
+  border: 1px solid $color-accent-dark;
+  border-radius: 5px;
+}

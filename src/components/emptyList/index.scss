@@ -1,0 +1,12 @@
+.empty-list {
+  font-size: 24px;
+  line-height: 1.21;
+  padding-top: 39px;
+
+  hr {
+    width: 64px;
+    background-color: $color-accent-dark;
+    height: 3px;
+    border: 1px solid $color-accent-dark;
+  }
+}

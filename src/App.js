@@ -1,25 +1,25 @@
-import logo from './logo.svg';
-import './App.css';
+import useFetch from "react-fetch-hook";
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+import AddBlock from "./components/addBlock";
+import EmptyList from "./components/emptyList";
+import ToDoList from "./components/toDoList";
+
+export default function App() {
+  const { isLoading, error, data } = useFetch("http://localhost:3000/toDoList");
+
+  if (error) {
+    console.log(error);
+  }
+
+  return isLoading ? (
+    <div>Loading...</div>
+  ) : (
+    <div className="body-container">
+      <h1>TODO-LIST</h1>
+      <div className="main-page">
+        <AddBlock />
+        {data.length > 0 ? <ToDoList data={data} /> : <EmptyList />}
+      </div>
     </div>
   );
 }
-
-export default App;
