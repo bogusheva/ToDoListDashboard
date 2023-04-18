@@ -7,8 +7,5 @@ export default function editData(id, data) {
       "Content-Type": "application/json",
     },
     body: JSON.stringify(data),
-  })
-    .then((response) => response.json())
-    .then((data) => console.log(data))
-    .catch((error) => console.error(error));
+  }).catch((error) => console.error(error));
 }

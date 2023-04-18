@@ -4,8 +4,9 @@ import { useForm } from "react-hook-form";
 
 export default function EditWindow(props) {
   const { register, handleSubmit } = useForm();
+
   function handleConfirmClick(data) {
-    const onSubmit = () => editData(props.id, data);
+    editData(props.id, data);
     props.onClose(false);
   }
   function handleCancelClick() {
